@@ -1,29 +1,54 @@
-# Visualizing Temperature w/AJAX
+# Visualizing Temperature
 
 ## Objectives
-* Build a page that uses data from the [Weather Underground](http://www.wunderground.com/weather/api/) to render a line chart using [Chart.js](http://chartkick.com/). It should look something like the picture below.
+* Build a page that uses data from the [Dark Sky](https://darksky.net/dev) to render a line chart using [Chart.js](http://www.chartjs.org/docs/latest/). It should look something like the picture below.
 
 ![example pic](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/js-weather-api-ajax/example.png "Pic of Example")
 
-* Learn how to use AJAX to keep data current.
+* Learn how to use `fetch` to keep data current.
 * Use a JavaScript visualization library.
 
 ## Instructions
-* Sign up for an account to generate a Weather Underground API key [here](http://www.wunderground.com/weather/api/d/login.html). You'll use this key for API calls.
-* Require jQuery at the top of `index.html`. Double check that it was correctly required by typing `jQuery` in the browser console or just `$`. This should return a function, not "undefined". (Note, you should require the version of JQuery that we have stored in `js/vendor` directory)
-* You'll be using [Chart.js](http://www.chartjs.org/) to visualize the JSON from Weather Underground so check it out. Require the `Chart.js` library in the head of your HTML file. Double check that you required the library correctly by typing `Chart` into the browser's console. A function should be returned, not "undefined". (Note, you should require the version of Chart.JS that we have stored in `js/vendor` directory)
+* Sign up for an account to generate a Dark Sky API Key. [here](https://darksky.net/dev/register). You'll use this key for API calls.
+* You'll be using [Chart.js](http://www.chartjs.org/) to visualize the JSON from Dark Sky so check it out. Require or script the `Chart.js` library in the head of your HTML file. Double check that you required the library correctly by typing `Chart` into the browser's console. A function should be returned, not "undefined". (Note, you should require the version of Chart.JS that we have stored in `js/vendor` directory)
 * Require `weatherChart.js` below the lines where you required jQuery and Chart.js.
 * In `init.js`, make a variable, `API_KEY`, and define it as the string of your Weather Underground key.
-* Also in `init.js`, make a variable `URL` that will be the URL that your code will fetch hourly JSON data on New York city's weather. Read the [docs](http://www.wunderground.com/weather/api/d/docs?d=data/hourly) to figure out what it'll be. (INCLUDED IN LAB CODE)
-* Use jQuery to fetch the JSON using an [AJAX request](http://api.jquery.com/jquery.ajax/).
-* Associate each hour, in military time, with a temperature, in fahrenheit.
+* Also in `init.js`, make a variable `URL` that will be the URL that your code will fetch hourly JSON data on New York city's weather. Read the [docs](https://darksky.net/dev/docs) to figure out what it'll be. (INCLUDED IN LAB CODE)
+* Get the weather data using a [fetch request](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch). You can write your fetch inside the makeRequest function. Make sure to return the fetch!
+* Associate each hour, in military time, with a temperature, in Fahrenheit.
 * Use the data you found in the line above to make a line chart with Chart.js. Refer to its [line chart docs](http://www.chartjs.org/docs/#line-chart-example-usage) for help. Render the chart in the canvas with the id `NYCWeatherChart`.
 
+#TIPS
+* The time returned from the Dark Sky API will need to multiplied by 1000 in order to be used properly with JavaScript's Date Object. You will then need to turn the milliseconds into an hour time using JavaScript's Date object. For example:
+
+```
+let myDate = new Date(1532030796843)
+myDate.getHours()
+==> 16
+```
+
+* Chart.JS example to create a chart
+```
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [{
+            label: "My First dataset",
+            data: [0, 10, 5, 2, 20, 30, 45],
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+```
+
 ## Resources
-* [Weather Underground](http://www.wunderground.com) - [Hourly](http://www.wunderground.com/weather/api/d/docs?d=data/hourly)
-* [jQuery](http://api.jquery.com/) - [AJAX](http://api.jquery.com/jquery.ajax/)
+* [Dark Sky Docs](https://darksky.net/dev/docs) - [Hourly Endpoint ](https://api.darksky.net/forecast/YOUR-API-KEY-HERE/40.7127,-74.0059?exclude=currently?exclude=minutely?exclude=daily')
+* [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 * [Chart.js](http://www.chartjs.org/docs/#getting-started) - [Line Charts](http://www.chartjs.org/docs/#line-chart-example-usage)
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-weather-api-ajax' title='Visualizing Temperature w/AJAX'>Visualizing Temperature w/AJAX</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/js-weather-api-ajax'>Weather Underground API Lab </a> on Learn.co and start learning to code for free.</p>
