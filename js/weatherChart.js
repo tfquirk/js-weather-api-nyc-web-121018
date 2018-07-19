@@ -39,8 +39,11 @@ function makeRequest(endpoint, canvas) {
     .then(res => res.json())
       .then(json => {
         let hourlyData = json.hourly.data
+        console.log(JSON.stringify(hourlyData.map(({temperature, time}) => ({temperature, time}))));
         let hourArr = getHour(hourlyData)
         let tempArr = getFahrenheits(hourlyData)
+        console.log(JSON.stringify(hourArr));
+        console.log(JSON.stringify(tempArr));
   // After your fetch works - use your json data and uncomment these two lines below :)
 
         let data = generateDataSet(hourArr, tempArr);

@@ -1,4 +1,4 @@
-var dummyData = {"response":{"version":"0.1","termsofService":"http://www.wunderground.com/weather/api/d/terms.html","features":{"hourly":1}},"hourly_forecast":[{"FCTTIME":{"hour":"18","hour_padded":"18","min":"00","min_unpadded":"0","sec":"0","year":"2014","mon":"11","mon_padded":"11","mon_abbrev":"Nov","mday":"5","mday_padded":"05","yday":"308","isdst":"0","epoch":"1415228400","pretty":"6:00 PM EST on November 05, 2014","civil":"6:00 PM","month_name":"November","month_name_abbrev":"Nov","weekday_name":"Wednesday","weekday_name_night":"Wednesday Night","weekday_name_abbrev":"Wed","weekday_name_unlang":"Wednesday","weekday_name_night_unlang":"Wednesday Night","ampm":"PM","tz":"","age":"","UTCDATE":""},"temp":{"english":"59","metric":"15"},"dewpoint":{"english":"37","metric":"3"},"condition":"Mostly Cloudy","icon":"mostlycloudy","icon_url":"http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif","fctcode":"3","sky":"69","wspd":{"english":"5","metric":"8"},"wdir":{"dir":"WSW","degrees":"250"},"wx":"Mostly Cloudy","uvi":"0","humidity":"43","windchill":{"english":"-9999","metric":"-9999"},"heatindex":{"english":"-9999","metric":"-9999"},"feelslike":{"english":"59","metric":"15"},"qpf":{"english":"0.0","metric":"0"},"snow":{"english":"0.0","metric":"0"},"pop":"0","mslp":{"english":"30.12","metric":"1020"}},{"FCTTIME":{"hour":"19","hour_padded":"19","min":"00","min_unpadded":"0","sec":"0","year":"2014","mon":"11","mon_padded":"11","mon_abbrev":"Nov","mday":"5","mday_padded":"05","yday":"308","isdst":"0","epoch":"1415232000","pretty":"7:00 PM EST on November 05, 2014","civil":"7:00 PM","month_name":"November","month_name_abbrev":"Nov","weekday_name":"Wednesday","weekday_name_night":"Wednesday Night","weekday_name_abbrev":"Wed","weekday_name_unlang":"Wednesday","weekday_name_night_unlang":"Wednesday Night","ampm":"PM","tz":"","age":"","UTCDATE":""},"temp":{"english":"58","metric":"14"},"dewpoint":{"english":"37","metric":"3"},"condition":"Mostly Cloudy","icon":"mostlycloudy","icon_url":"http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif","fctcode":"3","sky":"75","wspd":{"english":"4","metric":"6"},"wdir":{"dir":"WSW","degrees":"248"},"wx":"Mostly Cloudy","uvi":"0","humidity":"44","windchill":{"english":"-9999","metric":"-9999"},"heatindex":{"english":"-9999","metric":"-9999"},"feelslike":{"english":"58","metric":"14"},"qpf":{"english":"0.0","metric":"0"},"snow":{"english":"0.0","metric":"0"},"pop":"0","mslp":{"english":"30.14","metric":"1021"}},{"FCTTIME":{"hour":"20","hour_padded":"20","min":"00","min_unpadded":"0","sec":"0","year":"2014","mon":"11","mon_padded":"11","mon_abbrev":"Nov","mday":"5","mday_padded":"05","yday":"308","isdst":"0","epoch":"1415235600","pretty":"8:00 PM EST on November 05, 2014","civil":"8:00 PM","month_name":"November","month_name_abbrev":"Nov","weekday_name":"Wednesday","weekday_name_night":"Wednesday Night","weekday_name_abbrev":"Wed","weekday_name_unlang":"Wednesday","weekday_name_night_unlang":"Wednesday Night","ampm":"PM","tz":"","age":"","UTCDATE":""},"temp":{"english":"57","metric":"14"},"dewpoint":{"english":"38","metric":"3"},"condition":"Mostly Cloudy","icon":"mostlycloudy","icon_url":"http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif","fctcode":"3","sky":"78","wspd":{"english":"4","metric":"6"},"wdir":{"dir":"WSW","degrees":"242"},"wx":"Mostly Cloudy","uvi":"0","humidity":"49","windchill":{"english":"-9999","metric":"-9999"},"heatindex":{"english":"-9999","metric":"-9999"},"feelslike":{"english":"57","metric":"14"},"qpf":{"english":"0.0","metric":"0"},"snow":{"english":"0.0","metric":"0"},"pop":"0","mslp":{"english":"30.15","metric":"1021"}},{"FCTTIME":{"hour":"21","hour_padded":"21","min":"00","min_unpadded":"0","sec":"0","year":"2014","mon":"11","mon_padded":"11","mon_abbrev":"Nov","mday":"5","mday_padded":"05","yday":"308","isdst":"0","epoch":"1415239200","pretty":"9:00 PM EST on November 05, 2014","civil":"9:00 PM","month_name":"November","month_name_abbrev":"Nov","weekday_name":"Wednesday","weekday_name_night":"Wednesday Night","weekday_name_abbrev":"Wed","weekday_name_unlang":"Wednesday","weekday_name_night_unlang":"Wednesday Night","ampm":"PM","tz":"","age":"","UTCDATE":""},"temp":{"english":"57","metric":"14"},"dewpoint":{"english":"39","metric":"4"},"condition":"Overcast","icon":"cloudy","icon_url":"http://icons.wxug.com/i/c/k/nt_cloudy.gif","fctcode":"4","sky":"83","wspd":{"english":"4","metric":"6"},"wdir":{"dir":"WSW","degrees":"241"},"wx":"Cloudy","uvi":"0","humidity":"50","windchill":{"english":"-9999","metric":"-9999"},"heatindex":{"english":"-9999","metric":"-9999"},"feelslike":{"english":"57","metric":"14"},"qpf":{"english":"0.0","metric":"0"},"snow":{"english":"0.0","metric":"0"},"pop":"0","mslp":{"english":"30.15","metric":"1021"}},{"FCTTIME":{"hour":"22","hour_padded":"22","min":"00","min_unpadded":"0","sec":"0","year":"2014","mon":"11","mon_padded":"11","mon_abbrev":"Nov","mday":"5","mday_padded":"05","yday":"308","isdst":"0","epoch":"1415242800","pretty":"10:00 PM EST on November 05, 2014","civil":"10:00 PM","month_name":"November","month_name_abbrev":"Nov","weekday_name":"Wednesday","weekday_name_night":"Wednesday Night","weekday_name_abbrev":"Wed","weekday_name_unlang":"Wednesday","weekday_name_night_unlang":"Wednesday Night","ampm":"PM","tz":"","age":"","UTCDATE":""},"temp":{"english":"56","metric":"13"},"dewpoint":{"english":"40","metric":"4"},"condition":"Overcast","icon":"cloudy","icon_url":"http://icons.wxug.com/i/c/k/nt_cloudy.gif","fctcode":"4","sky":"86","wspd":{"english":"3","metric":"5"},"wdir":{"dir":"WSW","degrees":"238"},"wx":"Cloudy","uvi":"0","humidity":"53","windchill":{"english":"-9999","metric":"-9999"},"heatindex":{"english":"-9999","metric":"-9999"},"feelslike":{"english":"56","metric":"13"},"qpf":{"english":"0.0","metric":"0"},"snow":{"english":"0.0","metric":"0"},"pop":"0","mslp":{"english":"30.15","metric":"1021"}}]}
+const dummyData = [{"temperature":79.34,"time":1532037600},{"temperature":78.49,"time":1532041200},{"temperature":77.12,"time":1532044800},{"temperature":75.1,"time":1532048400},{"temperature":73.15,"time":1532052000},{"temperature":71.66,"time":1532055600},{"temperature":70.72,"time":1532059200},{"temperature":70.25,"time":1532062800},{"temperature":69.88,"time":1532066400},{"temperature":69.27,"time":1532070000},{"temperature":68.51,"time":1532073600},{"temperature":68.06,"time":1532077200},{"temperature":68.13,"time":1532080800},{"temperature":69.71,"time":1532084400},{"temperature":73.01,"time":1532088000},{"temperature":75.06,"time":1532091600},{"temperature":77.22,"time":1532095200},{"temperature":79.22,"time":1532098800},{"temperature":80.87,"time":1532102400},{"temperature":82.03,"time":1532106000},{"temperature":82.65,"time":1532109600},{"temperature":82.28,"time":1532113200},{"temperature":81.5,"time":1532116800},{"temperature":80.22,"time":1532120400},{"temperature":78.84,"time":1532124000},{"temperature":77.52,"time":1532127600},{"temperature":76.15,"time":1532131200},{"temperature":74.67,"time":1532134800},{"temperature":73.06,"time":1532138400},{"temperature":71.76,"time":1532142000},{"temperature":70.76,"time":1532145600},{"temperature":70,"time":1532149200},{"temperature":69.32,"time":1532152800},{"temperature":68.32,"time":1532156400},{"temperature":67.49,"time":1532160000},{"temperature":66.97,"time":1532163600},{"temperature":67.32,"time":1532167200},{"temperature":68.74,"time":1532170800},{"temperature":70.67,"time":1532174400},{"temperature":72.03,"time":1532178000},{"temperature":73.8,"time":1532181600},{"temperature":75.12,"time":1532185200},{"temperature":76.76,"time":1532188800},{"temperature":78.14,"time":1532192400},{"temperature":78.74,"time":1532196000},{"temperature":77.78,"time":1532199600},{"temperature":76.43,"time":1532203200},{"temperature":74.64,"time":1532206800},{"temperature":73.57,"time":1532210400}]
 
 describe("WeatherChart", function(){
   // The array we want to get all of our info from is located in `dummyData.hourly_forecast`
@@ -6,44 +6,15 @@ describe("WeatherChart", function(){
     // Each Item has a property of temp.
     // The Fahrenheit temperature is stored in temp's english property
     // Return a new array of just these values
-    expect(getFahrenheits(dummyData)).toEqual(['59','58','57','57','56']);
+    expect(getFahrenheits(dummyData)).toEqual([79.34,78.49,77.12,75.1,73.15,71.66,70.72,70.25,69.88,69.27,68.51,68.06,68.13,69.71,73.01,75.06,77.22,79.22,80.87,82.03,82.65,82.28,81.5,80.22,78.84,77.52,76.15,74.67,73.06,71.76,70.76,70,69.32,68.32,67.49,66.97,67.32,68.74,70.67,72.03,73.8,75.12,76.76,78.14,78.74,77.78,76.43,74.64,73.57]);
   });
 
   it("returns a list of hours", function(){
-    // Each Item has a property of FCTTIME. 
+    // Each Item has a property of FCTTIME.
     // The hour is stored in FCTTIME's hour property
     // Return a new array of just these values
-    expect(getHours(dummyData)).toEqual(['18','19','20','21','22']);
+    expect(getHours(dummyData)).toEqual([18,19,20,21,22,23,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]);
   });
 
-  it("generates the right dataset for chart.js", function(){
-    expected = {
-      labels: ["label1", "label2"],
-      datasets: [
-      {
-        label: "Hourly Weather for New York",
-        fillColor: "rgba(220,220,220,0.2)",
-        strokeColor: "rgba(220,220,220,1)",
-        pointColor: "rgba(220,220,220,1)",
-        pointStrokeColor: "#fff",
-        pointHighlightFill: "#fff",
-        pointHighlightStroke: "rgba(220,220,220,1)",
-        data: ["data1", "data2"]
-      }
-      ]
-    };
-    expect(generateDataSet(["label1", "label2"], ["data1", "data2"])).toEqual(expected);
-  })
-
-  describe("Ajax Requests" , function(){
-    var request,  onSuccess;
-
-    it("Works", function(){
-      spyOn($, 'ajax');
-      onSuccess = jasmine.createSpy('onSuccess');
-
-      makeAjaxRequest("http://example.com", onSuccess)
-      expect($.ajax).toHaveBeenCalledWith({url: 'http://example.com', dataType: 'jsonp', success: onSuccess})
-    })
-  })
+  // write a new fetch test in place of the old ajax test
 })
