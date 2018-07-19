@@ -51,4 +51,4 @@ var chart = new Chart(ctx, {
 ## Resources
 * [Dark Sky Docs](https://darksky.net/dev/docs) - [Hourly Endpoint ](https://api.darksky.net/forecast/YOUR-API-KEY-HERE/40.7127,-74.0059?exclude=currently?exclude=minutely?exclude=daily')
 * [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-* [Chart.js](http://www.chartjs.org/docs/#getting-started) - [Line Charts](http://www.chartjs.org/docs/#line-chart-example-usage)
+* [Chart.js](http://www.chartjs.org/docs/latest/getting-started/) - [Line Charts](http://www.chartjs.org/docs/latest/charts/line.html)
