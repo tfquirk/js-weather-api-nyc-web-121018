@@ -20,7 +20,6 @@
 
 ### TIPS
 * The time returned from the Dark Sky API will need to multiplied by 1000 in order to be used properly with JavaScript's Date Object. You will then need to turn the milliseconds into an hour time using JavaScript's Date object. For example:
-
 ```
 let myDate = new Date(1532030796 * 1000)
 myDate.getHours()
