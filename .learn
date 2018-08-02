@@ -1,9 +1,9 @@
 languages:
   - javascript
 tags:
-  - AJAX
+  - Fetch
   - data visualization
   - JavaScript library
-  - Chartkick
+  - Chart.js
   - API
 resources: 3

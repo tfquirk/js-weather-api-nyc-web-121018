@@ -1,4 +1,4 @@
-function getFahrenheits(result){
+function getFahrenheit(result){
   // Your code goes here
 }
 
@@ -26,11 +26,9 @@ function generateDataSet(labels, data) {
   }
 }
 
-  function makeRequest(endpoint, canvas) {
-    // Your code goes here
+function makeRequest(endpoint, canvas) {
+  // Your code goes here
 
-
-    // After your fetch works - use your json data and uncomment this lines below :)
-
-    // const tempChart = new Chart(canvas, generateDataSet(hourArr, tempArr))
-  }
+  // After your fetch works - use your json data with the line below :)
+  // const tempChart = new Chart(canvas, generateDataSet(getHour(hourlyData), getFahrenheit(hourlyData)))
+}
