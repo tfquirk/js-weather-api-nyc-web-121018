@@ -1,4 +1,4 @@
-function getFahrenheits(result){
+function getFahrenheit(result){
   // Your code goes here
   return result.map(function(hour){
     return hour.temperature
@@ -39,14 +39,7 @@ function makeRequest(endpoint, canvas) {
     .then(res => res.json())
       .then(json => {
         let hourlyData = json.hourly.data
-        console.log(JSON.stringify(hourlyData.map(({temperature, time}) => ({temperature, time}))));
-        let hourArr = getHour(hourlyData)
-        let tempArr = getFahrenheits(hourlyData)
-        console.log(JSON.stringify(hourArr));
-        console.log(JSON.stringify(tempArr));
-  // After your fetch works - use your json data and uncomment these two lines below :)
-
-        let data = generateDataSet(hourArr, tempArr);
-        const tempChart = new Chart(canvas, generateDataSet(hourArr, tempArr))
+        // After your fetch works - use your json data and uncomment these two lines below :)
+        const tempChart = new Chart(canvas, generateDataSet(getHour(hourlyData), getFahrenheit(hourlyData)))
   })
 }
