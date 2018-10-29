@@ -3,7 +3,7 @@
 ## Objectives
 * Build a page that uses data from the [Dark Sky](https://darksky.net/dev) to render a line chart using [Chart.js](http://www.chartjs.org/docs/latest/). It should look something like the picture below.
 
-![example pic](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/js-weather-api-ajax/example.png "Pic of Example")
+![example pic](weatherChart.png "Pic of Example")
 
 * Learn how to use `fetch` to keep data current.
 * Use a JavaScript visualization library.
