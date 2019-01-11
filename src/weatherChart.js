@@ -20,7 +20,7 @@ function generateDataSet(hours, temperatures) {
           label: "NYC Weather Data",
           data: temperatures,
           backgroundColor: "rgba(100,150,220,0.2)",
-          borderColor: 'rgb(255, 99, 132)'
+          borderColor: "rgb(255, 99, 132)"
         }
       ]
     },
@@ -37,12 +37,13 @@ function makeRequest(endpoint, canvas) {
     .then(r => r.json())
     .then(weatherData => {
       const hourlyData = weatherData.hourly.data
+      // convert darksky timestamps
       const formattedHours = formatHours(hourlyData)
+      // extract temperatures from darksky data
       const formattedTemps = formatFahrenheit(hourlyData)
-      console.log(formattedHours)
-      console.log(weatherData)
-      console.log(formattedTemps)
+      // create config object for chart.js
       const chartDataset = generateDataSet(formattedHours, formattedTemps)
+      // append the chart to the DOM
       new Chart(canvas, chartDataset)
     })
 }
