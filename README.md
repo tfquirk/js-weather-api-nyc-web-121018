@@ -11,10 +11,10 @@
 ## Instructions
 * Sign up for an account to generate a Dark Sky API Key [here](https://darksky.net/dev/register). You'll use this key for API calls.
 * You'll be using [Chart.js](http://www.chartjs.org/) to visualize the JSON from Dark Sky so check it out. The `Chart.js` library is already linked in the head of your HTML file. Double check that the library is correctly linked by typing `Chart` into the browser's console. A function should be returned, not "undefined".
-* Add a `script` tag for `weatherChart.js` and `init.js` at the bottom of your html body.
-* In `init.js`, make a variable, `API_KEY`, and define it as the string of your Dark Sky API key.
-* Also in `init.js`, the variable `URL` will be the URL that your code will use to fetch hourly JSON data on New York city's weather. This includes a CORS wrapper and a tag to just get hourly data. You can read the [docs](https://darksky.net/dev/docs) to get a sense of the exclude tags and read more about CORS [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). (INCLUDED IN LAB CODE)
-* Get the weather data using a [fetch request](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch). You can write your fetch inside the makeRequest function. Make sure to return the fetch!
+* Note that `script` tags for `weatherChart.js` and `init.js` are included in `index.html`.
+* In `src/init.js`, assign the `API_KEY` variable to your Dark Sky API key.
+* Also in `src/init.js`, the variable `URL` will be the URL that your code will use to fetch hourly JSON data on New York city's weather. This includes a CORS wrapper and a tag to just get hourly data. You can read the [docs](https://darksky.net/dev/docs) to get a sense of the exclude tags and read more about CORS [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
+* Get the weather data using a [`fetch` request](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch). You can write your `fetch` inside the `makeRequest` function declared in `src/weatherChart.js`. Make sure to return the fetch!
 * Associate each hour, in military time, with a temperature, in Fahrenheit.
 * Use the data you found in the line above to make a line chart with Chart.js. Refer to its [line chart docs](http://www.chartjs.org/docs/#line-chart-example-usage) for help. Render the chart in the canvas with the id `NYCWeatherChart`.
 
