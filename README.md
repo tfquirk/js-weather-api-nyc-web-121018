@@ -18,16 +18,19 @@
 * Associate each hour, in military time, with a temperature, in Fahrenheit.
 * Use the data you found in the line above to make a line chart with Chart.js. Refer to its [line chart docs](http://www.chartjs.org/docs/#line-chart-example-usage) for help. Render the chart in the canvas with the id `NYCWeatherChart`.
 
+---
+
 ### TIPS
 * The time returned from the Dark Sky API will need to multiplied by 1000 in order to be used properly with JavaScript's Date Object. You will then need to turn the milliseconds into an hour time using JavaScript's Date object. For example:
-```
+
+```js
 let myDate = new Date(1532030796 * 1000)
 myDate.getHours()
 ==> 16
 ```
 
 * Chart.JS example to create a chart
-```
+```js
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
