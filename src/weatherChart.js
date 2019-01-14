@@ -1,13 +1,9 @@
 function formatHours(hourlyData){
-  return hourlyData.map(formatHour)
-}
-
-function formatHour(hourData) {
-  return new Date(hourData.time * 1000).getHours()
+  // your code here
 }
 
 function formatFahrenheit(hourlyData){
-  return hourlyData.map(h => h.temperature)
+  // your code here
 }
 
 function generateDataSet(hours, temperatures) {
@@ -32,18 +28,13 @@ function generateDataSet(hours, temperatures) {
 
 function makeRequest(endpoint, canvas) {
   // Your code goes here
-  // After your fetch works - use your json data with the line below :)
-  fetch(endpoint)
-    .then(r => r.json())
-    .then(weatherData => {
-      const hourlyData = weatherData.hourly.data
-      // convert darksky timestamps
-      const formattedHours = formatHours(hourlyData)
-      // extract temperatures from darksky data
-      const formattedTemps = formatFahrenheit(hourlyData)
-      // create config object for chart.js
-      const chartDataset = generateDataSet(formattedHours, formattedTemps)
-      // append the chart to the DOM
-      new Chart(canvas, chartDataset)
-    })
+  // After your fetch works - format the response using the helper functions above:
+  // convert darksky timestamps
+  // const formattedHours = formatHours(/*data from darksky*/)
+  // extract temperatures from darksky data
+  // const formattedTemps = formatFahrenheit(/*data from darksky*/)
+  // create config object for chart.js
+  // const chartDataset = generateDataSet(formattedHours, formattedTemps)
+  // append the chart to the DOM
+  // new Chart(canvas, chartDataset)
 }
