@@ -1,9 +1,18 @@
+let weatherData = []
+let hours = []
+let fahrenheit = []
+let chartDataset;
+
 function formatHours(hourlyData){
-  // your code here
+  return hourlyData.map( object => {
+    return object.time = new Date(object.time * 1000).getHours()
+  })
 }
 
 function formatFahrenheit(hourlyData){
-  // your code here
+  return hourlyData.map( object => {
+    return Math.round(object.temperature)
+  })
 }
 
 function generateDataSet(hours, temperatures) {
@@ -13,15 +22,42 @@ function generateDataSet(hours, temperatures) {
       labels: hours,
       datasets: [
         {
-          label: "NYC Weather Data",
+          label: "Temperature",
           data: temperatures,
           backgroundColor: "rgba(100,150,220,0.2)",
-          borderColor: "rgb(255, 99, 132)"
+          borderColor: "rgb(255, 99, 132)",
+
         }
       ]
     },
     options: {
-      // additional configurations here
+      title: {
+        display: true,
+        text: 'NYC Weather Data',
+        fontSize: 25
+      },
+      layout: {
+        margin: {
+          left: 10,
+          right: 20,
+          top: 5,
+          bottom: 5
+        }
+      },
+      scales: {
+        yAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: 'Degrees Fahrenheit'
+          }
+        }],
+        xAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: 'Time - last 48hrs (24hr format)'
+          }
+        }]
+      }
     }
   }
 }
@@ -37,4 +73,19 @@ function makeRequest(endpoint, canvas) {
   // const chartDataset = generateDataSet(formattedHours, formattedTemps)
   // append the chart to the DOM
   // new Chart(canvas, chartDataset)
-}
+
+  fetch(endpoint)
+    .then(function(response) {
+    return response.json()
+  }).then(function(parsed) {
+    weatherData = parsed["hourly"]["data"]
+    hours = formatHours(weatherData)
+    fahrenheit = formatFahrenheit(weatherData)
+    chartDataset = generateDataSet(hours, fahrenheit)
+    return new Chart(canvas, chartDataset)
+  })
+
+
+
+
+} // end makeRequest funct.
